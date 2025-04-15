@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 [DEFAULT]
 BASEURL=http://js.mobanwang.com/
 [InternetShortcut]
 URL=http://js.mobanwang.com/
+=======
+[DEFAULT]
+BASEURL=http://js.mobanwang.com/
+[InternetShortcut]
+URL=http://js.mobanwang.com/
+>>>>>>> 7e1c511 (update new file)
 Modified=B00425471868C60167
