@@ -433,33 +433,39 @@
   <img src="images/bo2.jpg" data-id="1" class="active">
   <img src="images/fengyi-academy.jpg" data-id="2">
 </div>
-  <script>
-    $(function() {
-      var slides = $('.newslides'),
-      images = slides.find('img');
+ <script>
+  $(function () {
+    var slides = $('.newslides'),
+        images = slides.find('img');
 
-      images.each(function(i) {
-        $(this).attr('data-id', i + 1);
-      })
+    // 重新標記 data-id，保險起見
+    images.each(function (i) {
+      $(this).attr('data-id', i + 1);
+    });
 
-      var typed = new Typed('.typed-words', {
-        strings: ["港都文學 X 鹽埕生活"," 眷村記憶 × 鳳山地景"],
-        typeSpeed: 80,
-        backSpeed: 80,
-        backDelay: 4000,
-        startDelay: 1000,
-        loop: true,
-        showCursor: true,
-        preStringTyped: (arrayPos, self) => {
-          arrayPos++;
-          console.log(arrayPos);
-         $('.newslides img').stop(true, true).fadeOut(1000).removeClass('active');
-          $('.newslides img[data-id="'+arrayPos+'"]').stop(true, true).fadeIn(1000).addClass('active');
-        }
+    // 一開始只顯示第一張，其它全部隱藏
+    images.hide().eq(0).show();
 
-      });
-    })
-  </script>
+    var typed = new Typed('.typed-words', {
+      strings: ["港都文學 X 鹽埕生活", "眷村記憶 × 鳳山地景"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true,
+      preStringTyped: (arrayPos, self) => {
+        var index = arrayPos % images.length;
+
+        // 所有圖片淡出
+        images.stop(true, true).fadeOut(1000);
+
+        // 對應 index 的圖片淡入
+        images.eq(index).stop(true, true).fadeIn(1000);
+      }
+    });
+  });
+</script>
 
   <script src="js/custom.js"></script>
   
