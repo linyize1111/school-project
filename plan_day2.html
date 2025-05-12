@@ -1,105 +1,33 @@
-<!doctype html>
-<html lang="zh-TW">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>第二天：舊城記憶 X 城市邊界</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/aos.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body {
-      font-family: 'Lato', sans-serif;
-    }
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 900;
-    }
-    p {
-      font-size: 1.25rem;
-      font-weight: 700;
-    }
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>文學景點導覽：Day 1</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <nav class="site-nav">
-    <div class="container">
-      <div class="site-navigation">
-        <a href="index.html" class="logo m-0">第六組行程規劃 <span class="text-primary">.</span></a>
-        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
-          <li><a href="index.html">Home</a></li>
-          <li class="has-children active">
-            <a href="#">行程內容</a>
-            <ul class="dropdown">
-              <li><a href="plan_day1.html">第一天: 港都文學 X 鹽埕生活</a></li>
-              <li><a href="plan_day2.html">第二天: 舊城記憶 X 城市邊界</a></li>
-            </ul>
-          </li>
-          <li><a href="service.html">路線規劃</a></li>
-          <li><a href="about.html">景點與文學</a></li>
-          <li><a href="contact.html">小組成員</a></li>
-        </ul>
-        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
-          <span></span>
-        </a>
-      </div>
-    </div>
+
+  <nav class="breadcrumb">
+    <a href="index.html">Home</a> /
+    <a href="literature_index.html">景點與文學</a> /
+    <span>Day 1：文學地景</span>
   </nav>
 
-  <div class="py-5 bg-primary text-white text-center">
-    <div class="container">
-      <h2 class="mb-4">第二天：舊城記憶 X 城市邊界</h2>
-      <p class="lead">高雄車站出發 → 蓮池潭 → 左營眷村 → 午餐：左營特色小吃 → 曹公圳 → 鳳儀書院 → 大東藝術中心</p>
-    </div>
-  </div>
+  <h1>Day 1：文學景點與書籍關聯</h1>
 
-  <div class="container my-5 fade-in">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <img src="images/day2_1_map.jpg" alt="第二天路線地圖 1" class="img-fluid rounded shadow">
-      </div>
-    </div>
-  </div>
+  <section class="literary-spot">
+    <h2>哈瑪星鐵道文化園區</h2>
+    <img src="images/hamaxing-railway.jpg" alt="哈瑪星鐵道園區" class="spot-image">
+    <p><strong>對應書籍：</strong>《港邊人生・鹽埕再出發》<br>
+    此處結合街區踏查與人物記錄，體現港都與人的生命交織。</p>
+  </section>
 
-  <div class="container my-5 fade-in">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <img src="images/day2_2_map.jpg" alt="第二天路線地圖 2" class="img-fluid rounded shadow">
-      </div>
-    </div>
-  </div>
-  
-  <footer class="inner dark">
-    <div class="container">
-      <div class="row text-center text-md-left">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <p>
-            &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.
-          </p>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <a href="#" class="mx-2">Terms</a>
-          <a href="#" class="mx-2">Privacy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <section class="literary-spot">
+    <h2>高雄後站／驛轉場</h2>
+    <img src="images/kaohsiung-backstation.jpg" alt="高雄後站" class="spot-image">
+    <p><strong>對應書籍：</strong>《一九九九》<br>
+    本書描繪都市邊緣與個人記憶的流動，在此場景引發人地連結的共鳴。</p>
+  </section>
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
