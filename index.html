@@ -50,10 +50,15 @@
     display: block; /* 這樣圖片就不會出現空隙 */
     margin: 0 auto;}
       .cursor-effects {
-      position: absolute;
-      pointer-events: none;
-      z-index: 10;
-    }
+  position: fixed; /* 固定在視窗上 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* 讓粒子容器不會阻擋鼠標事件 */
+  z-index: 10000; /* 確保在最上層 */
+}
+
 
     .cursor-particle {
       position: absolute;
@@ -65,15 +70,16 @@
     }
 
     @keyframes particle-animation {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(3);
-        opacity: 0;
-      }
-    }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
 
 
   </style>
