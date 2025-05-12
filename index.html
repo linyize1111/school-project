@@ -49,6 +49,31 @@
     height: auto;
     display: block; /* 這樣圖片就不會出現空隙 */
     margin: 0 auto;
+      .cursor-effects {
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .cursor-particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      animation: particle-animation 1s forwards;
+    }
+
+    @keyframes particle-animation {
+      0% {
+        transform: scale(0.5);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
 }
 
   </style>
@@ -57,6 +82,33 @@
 </head>
 
 <body>
+  <div class="cursor-effects" id="cursor-effects"></div>
+
+  <script>
+    // 向量粒子效果
+    const cursorEffects = document.getElementById('cursor-effects');
+
+    // 創建粒子
+    function createParticle(x, y) {
+      const particle = document.createElement('div');
+      particle.classList.add('cursor-particle');
+      particle.style.left = `${x - 5}px`;  // 鼠標位置偏移，使粒子顯示在鼠標上
+      particle.style.top = `${y - 5}px`;
+
+      cursorEffects.appendChild(particle);
+
+      // 動畫結束後移除粒子
+      setTimeout(() => {
+        particle.remove();
+      }, 1000);  // 與動畫時間同步，確保粒子在消失後被清除
+    }
+
+    // 當鼠標移動時，創建粒子
+    window.addEventListener('mousemove', (e) => {
+      createParticle(e.clientX, e.clientY);
+    });
+
+  </script>
 
   <div class="lines-wrap">
     <div class="lines-inner">
