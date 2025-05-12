@@ -76,9 +76,8 @@
       </div>
     </div>
   </nav>
-  
 
-    <div class="py-5 bg-primary">
+  <div class="py-5 bg-primary">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
@@ -89,27 +88,29 @@
     </div>
   </div>
 
-          <div class="item">
-          <a class="media-thumb" href="images/img_1.jpg" data-fancybox="gallery">
-            <div class="media-text">
-              <h3>name list</h3>
-            </div>
-            <img src="images/name.png" alt="Image" class="img-fluid">
-          </a> 
+  <div class="container py-4">
+    <div class="item text-center">
+      <a class="media-thumb" href="images/img_1.jpg" data-fancybox="gallery">
+        <div class="media-text mb-2">
+          <h3>name list</h3>
         </div>
+        <img src="images/name.png" alt="Image" class="img-fluid mx-auto d-block">
+      </a> 
+    </div>
+  </div>
 
-    <div class="inner dark">
-      <div class="container">
-        <div class="row text-center text-md-left">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <p>
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a target="_blank" href="http://www.mobanwang.com/" title="网页模板">网页模板</a>
-                </p>
-          </div>
-          <div class="col-md-6 text-md-right">
-            <a href="#" class="mx-2">Terms</a>
-            <a href="#" class="mx-2">Privacy</a>
-          </div>
+  <div class="inner dark">
+    <div class="container">
+      <div class="row text-center text-md-left">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
+            <a target="_blank" href="http://www.mobanwang.com/" title="网页模板">网页模板</a>
+          </p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="#" class="mx-2">Terms</a>
+          <a href="#" class="mx-2">Privacy</a>
         </div>
       </div>
     </div>
@@ -122,6 +123,7 @@
     </div>
   </div>
 
+  <!-- JS Files -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -133,7 +135,14 @@
   <script src="js/moment.min.js"></script>
   <script src="js/daterangepicker.js"></script>
 
-  
+  <!-- Loading fix -->
+  <script>
+    window.addEventListener('load', function () {
+      document.getElementById('overlayer').style.display = 'none';
+      document.querySelector('.loader').style.display = 'none';
+    });
+  </script>
+
 </body>
 
 </html>
