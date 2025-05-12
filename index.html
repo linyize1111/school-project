@@ -31,6 +31,10 @@
     </div>
   </div>
   <!-- END lines -->
+<div class="newslides">
+  <img src="images/bo2.jpg" data-id="1" class="active">
+  <img src="images/fengyi-academy.jpg" data-id="2">
+</div>
 
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
@@ -400,7 +404,7 @@
   <script src="js/typed.js"></script>
   <script>
     $(function() {
-      var slides = $('.slides'),
+      var slides = $('.newslides'),
       images = slides.find('img');
 
       images.each(function(i) {
@@ -418,8 +422,8 @@
         preStringTyped: (arrayPos, self) => {
           arrayPos++;
           console.log(arrayPos);
-          $('.slides img').removeClass('active');
-          $('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+          $('.newslides img').removeClass('active');
+          $('.newslides img[data-id="'+arrayPos+'"]').addClass('active');
         }
 
       });
