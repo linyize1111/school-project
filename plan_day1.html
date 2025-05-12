@@ -1,39 +1,99 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<!doctype html>
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>Day 1：港都文學 × 鹽埕生活</title>
-  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第一天：港都文學 X 鹽埕生活 | 第六組</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .day-plan-section {
+      padding: 60px 0;
+    }
+    .day-plan-section h2 {
+      margin-bottom: 40px;
+    }
+    .plan-block {
+      margin-bottom: 40px;
+    }
+    .plan-block img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <nav class="breadcrumb">
-    <a href="index.html">Home</a> /
-    <li class="active"><a href="services.html">路線規劃</a></li> /
-    <span>Day 1：鹽埕生活</span>
+  <!-- 導覽列 -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">第六組行程規劃 <span class="text-primary">.</span></a>
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-children active">
+            <a href="#">行程內容</a>
+            <ul class="dropdown">
+              <li class="active"><a href="plan_day1.html">第一天: 港都文學 X 鹽埕生活</a></li>
+              <li><a href="plan_day2.html">第二天: 舊城記憶 X 城市邊界</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">路線規劃</a></li>
+          <li><a href="about.html">景點與文學</a></li>
+          <li><a href="contact.html">小組成員</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <h1>Day 1：港都文學 × 鹽埕生活</h1>
+  <!-- 行程內容 -->
+  <div class="day-plan-section bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center">第一天：港都文學 X 鹽埕生活</h2>
 
-  <section class="stop">
-    <h2>09:00｜鹽埕埔站</h2>
-    <img src="images/yan-cheng-pu.jpg" alt="鹽埕埔站" class="stop-image">
-    <p>鹽埕老城區門戶，交通便利，歷史氛圍濃厚。適合作為文化導覽的起點。</p>
-  </section>
+      <div class="row plan-block">
+        <div class="col-md-6">
+          <img src="images/day1/boer.jpg" alt="駁二藝術特區">
+        </div>
+        <div class="col-md-6">
+          <h4>上午｜駁二藝術特區</h4>
+          <p>漫步文創倉庫區，觀察港邊生活風貌，並朗讀《鹽埕風情畫》節選，思考文學如何轉化地方記憶。</p>
+        </div>
+      </div>
 
-  <section class="stop">
-    <h2>09:30｜大溝頂市場</h2>
-    <img src="images/da-gou-ding.jpg" alt="大溝頂市場" class="stop-image">
-    <p>在地熱鬧市場，保留完整街區紋理，能感受高雄庶民生活與街頭風貌。</p>
-  </section>
+      <div class="row plan-block">
+        <div class="col-md-6 order-md-2">
+          <img src="images/day1/yancheng.jpg" alt="鹽埕老街">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h4>中午｜鹽埕市場巡禮</h4>
+          <p>走訪老市場、在地小吃體驗，搭配歷史照片與居民訪談，理解庶民生活的軌跡。</p>
+        </div>
+      </div>
 
-  <section class="stop">
-    <h2>10:00｜新樂街（君店）</h2>
-    <img src="images/xin-le-street.jpg" alt="新樂街" class="stop-image">
-    <p>文青風選書店與咖啡空間並存，呈現鹽埕新舊交融的人文風貌。</p>
-  </section>
+      <div class="row plan-block">
+        <div class="col-md-6">
+          <img src="images/day1/former.jpg" alt="原大溝頂街道">
+        </div>
+        <div class="col-md-6">
+          <h4>下午｜文學散步：從鹽埕街到大溝頂</h4>
+          <p>導覽文學與街區的交織歷史，導讀地方作家的短篇小說並於現場討論寫作靈感來源。</p>
+        </div>
+      </div>
 
-  <!-- 其餘行程同樣格式略... -->
+      <div class="row plan-block">
+        <div class="col-md-6 order-md-2">
+          <img src="images/day1/sunset.jpg" alt="西子灣夕陽">
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h4>傍晚｜西子灣日落觀察</h4>
+          <p>以《西子灣情書》為背景，觀察日落與港灣，結合文學想像與場景感受，進行自由書寫。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 </body>
 </html>
