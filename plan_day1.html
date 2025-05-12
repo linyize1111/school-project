@@ -1,49 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Day 1：港都文學 × 鹽埕生活</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <title>第一天：港都文學 × 鹽埕生活</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    .stop-image {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-bottom: 20px;
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f8f9fa;
     }
-
-    .stop-image:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
     .day-section {
       padding: 60px 0;
     }
-
-    .day-section h2 {
-      font-weight: 900;
-      font-size: 2rem;
+    .stop {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
       margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .location-name {
-      font-size: 1.25rem;
+    .stop h3 {
       font-weight: 700;
-      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    .stop p {
+      margin-bottom: 10px;
+    }
+    .map-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    .time {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .book-title {
+      font-weight: 700;
+      color: #007bff;
+    }
+    .container {
+      max-width: 900px;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Navigation -->
+  <!-- 導覽列 -->
   <nav class="site-nav">
     <div class="container">
       <div class="site-navigation">
@@ -53,11 +64,11 @@
           <li class="has-children">
             <a href="#">行程內容</a>
             <ul class="dropdown">
-              <li><a href="plan_day1.html">第一天: 港都文學 X 鹽埕生活</a></li>
-              <li><a href="plan_day2.html">第二天: 舊城記憶 X 城市邊界</a></li>
+              <li class="active"><a href="plan_day1.html">第一天: 港都文學 × 鹽埕生活</a></li>
+              <li><a href="plan_day2.html">第二天: 眷村記憶 × 鳳山地景</a></li>
             </ul>
           </li>
-          <li><a href="services.html" class="active">路線規劃</a></li>
+          <li><a href="services.html">路線規劃</a></li>
           <li><a href="about.html">景點與文學</a></li>
           <li><a href="contact.html">小組成員</a></li>
         </ul>
@@ -65,80 +76,108 @@
     </div>
   </nav>
 
-  <!-- Page Header -->
-  <div class="py-5 bg-primary text-center text-white">
+  <!-- 頁首 -->
+  <div class="py-5 bg-primary text-white text-center">
     <div class="container">
-      <h2 class="mb-3">Day 1：港都文學 × 鹽埕生活</h2>
-      <p>探索高雄的歷史、文化與邊界 —— 兩天一夜的深度旅程</p>
+      <h2 class="mb-3">第一天：港都文學 × 鹽埕生活</h2>
+      <p>探索鹽埕與港邊的城市記憶與在地文學</p>
     </div>
   </div>
 
-  <!-- Day 1 Content -->
-  <div class="day-section bg-light" data-aos="fade-up">
-    <div class="container">
-      <h2>Day 1：港都文學 × 鹽埕生活</h2>
-      <div class="row">
-        <!-- Stop 1: 鹽埕埔站 -->
-        <div class="col-md-6">
-          <div class="location-name">鹽埕埔站</div>
-          <img src="images/yan-cheng-pu.jpg" alt="鹽埕埔站" class="stop-image">
-          <p>鹽埕老城區門戶，交通便利，歷史氛圍濃厚。適合作為文化導覽的起點。</p>
-        </div>
-        <!-- Stop 2: 大溝頂市場 -->
-        <div class="col-md-6">
-          <div class="location-name">大溝頂市場</div>
-          <img src="images/da-gou-ding.jpg" alt="大溝頂市場" class="stop-image">
-          <p>在地熱鬧市場，保留完整街區紋理，能感受高雄庶民生活與街頭風貌。</p>
-        </div>
-        <!-- Stop 3: 新樂街（君店） -->
-        <div class="col-md-6">
-          <div class="location-name">新樂街（君店）</div>
-          <img src="images/xin-le-street.jpg" alt="新樂街" class="stop-image">
-          <p>文青風選書店與咖啡空間並存，呈現鹽埕新舊交融的人文風貌。</p>
-        </div>
-        <!-- Stop 4: 小吃地圖/鴨肉珍 -->
-        <div class="col-md-6">
-          <div class="location-name">小吃地圖 / 鴨肉珍</div>
-          <img src="images/ya-low.jpg" alt="鴨肉珍" class="stop-image">
-          <p>1. 在地老字號美食2. 選擇多樣，滿足不同口味3.高CP值4. 鹽埕區美食密集5. 可自由探索個人喜好餐。</p>
-        </div>
-        <!-- Stop 5: 駁二藝術區 -->
-        <div class="col-md-6">
-          <div class="location-name">駁二藝術區</div>
-          <img src="images/gaoshin-station.jpg" alt="駁二藝術區" class="stop-image">
-          <p>駁二為高雄文創重地，輕軌路線橫貫過去的工業區與現代轉型景觀。沿途可觀察城市再生與文化場景的融合。</p>
-        </div>
-        <!-- Stop 6: 夜市散步 -->
-        <div class="col-md-6">
-          <div class="location-name">夜市散步：大溝頂夜市 / 六合夜市</div>
-          <img src="images/6huh.jpg" alt="六合夜市" class="stop-image">
-          <p>兩者皆是高雄具代表性的夜市文化場域，能實地感受鹽埕夜間的庶民活力與生活節奏。</p>
-        </div>
-      </div>
+  <!-- 行程區塊 -->
+  <div class="container day-section">
+
+    <div class="stop">
+      <div class="time">09:00 集合 | 鹽埕埔站出發</div>
+      <h3>鹽埕埔站</h3>
+      <p>1. 是鹽埕老城區的門戶</p>
+      <p>2. 交通便利易集合</p>
+      <p>3. 富有歷史氛圍</p>
+      <p>4. 鄰近傳統市場</p>
+      <p>5. 可作為文化導覽起點</p>
+      <img src="images/yan-cheng-pu.jpg" alt="鹽埕埔站" class="map-img">
     </div>
+
+    <div class="stop">
+      <div class="time">09:30 大溝頂市場周邊</div>
+      <h3>大溝頂市場周邊</h3>
+      <p>1. 在地人常逛的熱鬧市場</p>
+      <p>2. 可感受庶民生活</p>
+      <p>3. 傳統攤販多樣性</p>
+      <p>4. 街區紋理保留完整</p>
+      <p>5. 適合拍照與街頭散策</p>
+      <img src="images/da-gou-ding.jpg" alt="大溝頂市場" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">10:30 君店（新樂街）</div>
+      <h3>君店（新樂街）</h3>
+      <p>1. 文青風格設計感十足</p>
+      <p>2. 咖啡廳與選書店結合</p>
+      <p>3. 有本地創作商品</p>
+      <p>4. 適合休息放鬆</p>
+      <p>5. 可深入了解新樂街人文風貌</p>
+      <img src="images/xin-le-street.jpg" alt="新樂街君店" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">12:30 午餐時間</div>
+      <h3>小吃地圖 / 鴨肉珍</h3>
+      <p>1. 在地老字號美食</p>
+      <p>2. 選擇多樣，滿足不同口味</p>
+      <p>3. 高CP值</p>
+      <p>4. 鹽埕區美食密集</p>
+      <p>5. 可自由探索個人喜好餐</p>
+      <p><strong>說明：</strong>鹽埕是高雄老市區之一，擁有豐富的庶民飲食文化。</p>
+      <img src="images/ya-low.jpg" alt="鴨肉珍" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">13:30 鹽一區特約區 → 哈瑪星鐵道文化園區</div>
+      <h3>文學導覽：《港邊人生・鹽埕再出發》</h3>
+      <p><span class="book-title">書目簡介：</span>結合鹽埕街區記憶與人物故事，收錄當地居民的人生歷程，展現港邊城市如何在時代變遷中留下痕跡。</p>
+      <p><strong>說明：</strong>實地踏查與書中人物及場景連結，感受特約區與港邊文化的演變。</p>
+    </div>
+
+    <div class="stop">
+      <div class="time">15:00 駁二藝術區 → 高雄車站（輕軌導覽）</div>
+      <h3>駁二藝術區</h3>
+      <p><strong>說明：</strong>駁二為高雄文創重地，輕軌路線橫貫過去的工業區與現代景觀。沿途可觀察城市再生與文化融合。</p>
+      <img src="images/bo-er.jpg" alt="駁二藝術區" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">15:30 高雄車站後站 / 驛轉場遺跡</div>
+      <h3>文學導覽：《一九九九》</h3>
+      <p><span class="book-title">書目簡介：</span>小說以高雄為背景，描繪城市邊界、記憶與疏離感，呈現人與空間的流動與離散。</p>
+      <p><strong>說明：</strong>探訪都市邊緣地帶的荒廢與轉變，搭配小說中的地景場景理解書中主題。</p>
+    </div>
+
+    <div class="stop">
+      <div class="time">17:30 自由活動／晚餐分享</div>
+      <p><strong>地點：</strong>可前往下午公園或回到鹽埕聚餐</p>
+      <p><strong>說明：</strong>自由活動，可作為沉澱與討論導覽內容的時間，也可簡單散步放鬆。</p>
+    </div>
+
+    <div class="stop">
+      <div class="time">18:30 夜市散步與結束</div>
+      <h3>大溝頂夜市 / 六合夜市</h3>
+      <p><strong>說明：</strong>兩者皆為高雄具代表性的夜市文化場域，能感受鹽埕夜間的庶民活力與生活節奏。</p>
+      <img src="images/6huh.jpg" alt="六合夜市" class="map-img">
+    </div>
+
   </div>
 
   <!-- Footer -->
   <div class="inner dark bg-dark text-white py-4">
-    <div class="container">
-      <div class="row text-center text-md-left">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <p>© <script>document.write(new Date().getFullYear());</script> 第六組. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <a href="#" class="mx-2 text-white">Terms</a>
-          <a href="#" class="mx-2 text-white">Privacy</a>
-        </div>
-      </div>
+    <div class="container text-center">
+      <p>© <script>document.write(new Date().getFullYear());</script> 第六組. All rights reserved.</p>
     </div>
   </div>
 
-  <!-- JS Files -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
