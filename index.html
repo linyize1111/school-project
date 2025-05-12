@@ -31,10 +31,7 @@
     </div>
   </div>
   <!-- END lines -->
-<div class="newslides">
-  <img src="images/bo2.jpg" data-id="1" class="active">
-  <img src="images/fengyi-academy.jpg" data-id="2">
-</div>
+
 
   <div class="site-mobile-menu site-navbar-target">
     <div class="site-mobile-menu-header">
@@ -400,8 +397,12 @@
   <script src="js/aos.js"></script>
   <script src="js/moment.min.js"></script>
   <script src="js/daterangepicker.js"></script>
-
   <script src="js/typed.js"></script>
+  
+  <div class="newslides">
+  <img src="images/bo2.jpg" data-id="1" class="active">
+  <img src="images/fengyi-academy.jpg" data-id="2">
+</div>
   <script>
     $(function() {
       var slides = $('.newslides'),
@@ -422,8 +423,8 @@
         preStringTyped: (arrayPos, self) => {
           arrayPos++;
           console.log(arrayPos);
-          $('.newslides img').removeClass('active');
-          $('.newslides img[data-id="'+arrayPos+'"]').addClass('active');
+         $('.newslides img').stop(true, true).fadeOut(1000).removeClass('active');
+          $('.newslides img[data-id="'+arrayPos+'"]').stop(true, true).fadeIn(1000).addClass('active');
         }
 
       });
