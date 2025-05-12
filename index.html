@@ -19,6 +19,27 @@
   <link rel="stylesheet" href="css/daterangepicker.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+    <style>
+    .newslides {
+      position: relative;
+    }
+
+    .newslides img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .newslides img.active {
+      display: block;
+      opacity: 1;
+      z-index: 1;
+    }
+  </style>
 
   <title>Travel Free HTML Template</title>
 </head>
