@@ -75,7 +75,33 @@
 </head>
 
 <body>
+  <div class="cursor-effects" id="cursor-effects"></div>
 
+  <script>
+    // 向量粒子效果
+    const cursorEffects = document.getElementById('cursor-effects');
+
+    // 創建粒子
+    function createParticle(x, y) {
+      const particle = document.createElement('div');
+      particle.classList.add('cursor-particle');
+      particle.style.left = `${x - 5}px`;  // 鼠標位置偏移，使粒子顯示在鼠標上
+      particle.style.top = `${y - 5}px`;
+
+      cursorEffects.appendChild(particle);
+
+      // 動畫結束後移除粒子
+      setTimeout(() => {
+        particle.remove();
+      }, 1000);  // 與動畫時間同步，確保粒子在消失後被清除
+    }
+
+    // 當鼠標移動時，創建粒子
+    window.addEventListener('mousemove', (e) => {
+      createParticle(e.clientX, e.clientY);
+    });
+
+  </script>
 <nav class="site-nav">
   <div class="container">
     <div class="site-navigation">
