@@ -3,38 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>路線規劃</title>
+  <title>路線規劃 | 第六組</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+
   <style>
-    body {
-      font-family: 'Lato', sans-serif;
+    .map-img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
     }
-    h2 {
-      font-size: 2.5rem;
+
+    .map-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .day-section {
+      padding: 60px 0;
+    }
+
+    .day-section h2 {
       font-weight: 900;
+      font-size: 2rem;
+      margin-bottom: 30px;
     }
-    p {
+
+    .location-name {
       font-size: 1.25rem;
       font-weight: 700;
-    }
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 2s forwards;
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
+
+  <!-- 導覽列 -->
   <nav class="site-nav">
     <div class="container">
       <div class="site-navigation">
-        <a href="index.html" class="logo m-0">第六組行程規劃 <span class="
-::contentReference[oaicite:0]{index=0}
- 
+        <a href="index.html" class="logo m-0">第六組行程規劃 <span class="text-primary">.</span></a>
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-children">
+            <a href="#">行程內容</a>
+            <ul class="dropdown">
+              <li><a href="#">第一天: 港都文學 X 鹽埕生活</a></li>
+              <li><a href="#">第二天: 舊城記憶 X 城市邊界</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="service.html">路線規劃</a></li>
+          <li><a href="about.html">景點與文學</a></li>
+          <li><a href="contact.html">小組成員</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 頁首區塊 -->
+  <div class="py-5 bg-primary text-center text-white">
+    <div class="container">
+      <h2 class="mb-3">第六組路線規劃</h2>
+      <p>探索高雄的歷史、文化與邊界 —— 兩天一夜的深度旅程</p>
+    </div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day-section bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2>第一天：港都文學 × 鹽埕生活</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="location-name">駁二藝術特區</div>
+          <img src="images/maps/map_day1_1.jpg" alt="駁二藝術特區地圖" class="map-img">
+        </div>
+        <div class="col-md-6">
+          <div class="location-name">鹽埕老街</div>
+          <img src="images/maps/map_day1_2.jpg" alt="鹽埕老街地圖" class="map-img">
+        </div>
+        <div class="col-md-6">
+          <div class="location-name">高雄市立歷史博物館</div>
+          <img src="images/maps/map_day1_3.jpg" alt="歷史博物館地圖" class="map-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day-section" data-aos="fade-up">
+    <div class="container">
+      <h2>第二天：舊城記憶 × 城市邊界</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="location-name">哈瑪星鐵道文化園區</div>
+          <img src="images/maps/map_day2_1.jpg" alt="哈瑪星鐵道地圖" class="map-img">
+        </div>
+        <div class="col-md-6">
+          <div class="location-name">旗津海岸公園</div>
+          <img src="images/maps/map_day2_2.jpg" alt="旗津海岸地圖" class="map-img">
+        </div>
+        <div class="col-md-6">
+          <div class="location-name">打狗英國領事館文化園區</div>
+          <img src="images/maps/map_day2_3.jpg" alt="打狗英領事館地圖" class="map-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="inner dark bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-left">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p>© <script>document.write(new Date().getFullYear());</script> 第六組. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="#" class="mx-2 text-white">Terms</a>
+          <a href="#" class="mx-2 text-white">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
