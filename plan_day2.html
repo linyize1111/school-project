@@ -1,59 +1,155 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<!doctype html>
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <title>Day 2：眷村記憶 × 鳳山地景</title>
-  <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>第二天：眷村記憶 × 鳳山地景 | 第六組</title>
+
+  <!-- 字體與樣式 -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .map-img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .map-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .day-section {
+      padding: 60px 0;
+    }
+
+    .day-section h2 {
+      font-weight: 900;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .location-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .stop {
+      margin-bottom: 40px;
+    }
+
+    .stop img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <nav class="breadcrumb">
-    <a href="index.html">Home</a> /
-    <li class="active"><a href="services.html">路線規劃</a></li> /
-    <span>Day 2：眷村記憶 × 鳳山地景</span>
+  <!-- 導覽列 -->
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="index.html" class="logo m-0">第六組行程規劃 <span class="text-primary">.</span></a>
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-children">
+            <a href="#">行程內容</a>
+            <ul class="dropdown">
+              <li><a href="plan_day1.html">第一天: 港都文學 × 鹽埕生活</a></li>
+              <li class="active"><a href="plan_day2.html">第二天: 眷村記憶 × 鳳山地景</a></li>
+            </ul>
+          </li>
+          <li><a href="services.html">路線規劃</a></li>
+          <li><a href="about.html">景點與文學</a></li>
+          <li><a href="contact.html">小組成員</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <h1>Day 2：眷村記憶 × 鳳山地景</h1>
+  <!-- 頁首區塊 -->
+  <div class="py-5 bg-primary text-center text-white">
+    <div class="container">
+      <h2 class="mb-3">第二天：眷村記憶 × 鳳山地景</h2>
+      <p>探索左營與鳳山的歷史與文化，感受城市的多元風貌</p>
+    </div>
+  </div>
 
-  <section class="stop">
-    <h2>09:00｜高雄車站出發 → 左營站 → 紅35公車</h2>
-    <p>從高雄車站出發，轉乘至左營，進入眷村與蓮池潭的歷史記憶。</p>
-  </section>
+  <!-- 行程內容 -->
+  <div class="day-section bg-light" data-aos="fade-up">
+    <div class="container">
+      <div class="stop">
+        <h3>09:00｜高雄車站出發 → 左營站 → 紅35公車</h3>
+        <p>從高雄車站出發，轉乘至左營，進入眷村與蓮池潭的歷史記憶。</p>
+      </div>
 
-  <section class="stop">
-    <h2>09:30｜蓮池潭</h2>
-    <img src="images/lian-chi-tan.jpg" alt="蓮池潭" class="stop-image">
-    <p>高雄著名的宗教與歷史地景，可參訪龍虎塔、春秋閣等地。</p>
-  </section>
+      <div class="stop">
+        <h3>09:30｜蓮池潭</h3>
+        <img src="images/lian-chi-tan.jpg" alt="蓮池潭" class="map-img">
+        <p>高雄著名的宗教與歷史地景，可參訪龍虎塔、春秋閣等地。</p>
+      </div>
 
-  <section class="stop">
-    <h2>10:30｜左營眷村區</h2>
-    <img src="images/zuoying-village.jpg" alt="左營眷村" class="stop-image">
-    <p>走訪莒光路、鳳翔一路一帶，感受「他鄉成故鄉」的國族記憶空間。</p>
-  </section>
+      <div class="stop">
+        <h3>10:30｜左營眷村區</h3>
+        <img src="images/zuoying-village.jpg" alt="左營眷村" class="map-img">
+        <p>走訪莒光路、鳳翔一路一帶，感受「他鄉成故鄉」的國族記憶空間。</p>
+      </div>
 
-  <section class="stop">
-    <h2>12:00｜午餐：左營眷村小吃</h2>
-    <p>推薦品項如將軍餅、海青王酥等，體驗眷村混合南北味的料理文化。</p>
-  </section>
+      <div class="stop">
+        <h3>12:00｜午餐：左營眷村小吃</h3>
+        <p>推薦品項如將軍餅、海青王酥等，體驗眷村混合南北味的料理文化。</p>
+      </div>
 
-  <section class="stop">
-    <h2>13:30｜曹公圳與鳳山溪</h2>
-    <img src="images/fengshan-river.jpg" alt="鳳山溪" class="stop-image">
-    <p>水圳與鳳山老街交錯處，承載著教育與庶民生活的地景演變。</p>
-  </section>
+      <div class="stop">
+        <h3>13:30｜曹公圳與鳳山溪</h3>
+        <img src="images/fengshan-river.jpg" alt="鳳山溪" class="map-img">
+        <p>水圳與鳳山老街交錯處，承載著教育與庶民生活的地景演變。</p>
+      </div>
 
-  <section class="stop">
-    <h2>15:30｜鳳儀書院</h2>
-    <img src="images/fengyi-academy.jpg" alt="鳳儀書院" class="stop-image">
-    <p>清代書院建築，結合官學與文風，適合進行歷史與文化探索。</p>
-  </section>
+      <div class="stop">
+        <h3>15:30｜鳳儀書院</h3>
+        <img src="images/fengyi-academy.jpg" alt="鳳儀書院" class="map-img">
+        <p>清代書院建築，結合官學與文風，適合進行歷史與文化探索。</p>
+      </div>
 
-  <section class="stop">
-    <h2>17:00｜大東藝術中心 → 大東夜市</h2>
-    <img src="images/dadong-center.jpg" alt="大東藝術中心" class="stop-image">
-    <p>現代藝文空間與夜市生活交錯，呈現鳳山的當代文化面貌。</p>
-  </section>
+      <div class="stop">
+        <h3>17:00｜大東藝術中心 → 大東夜市</h3>
+        <img src="images/dadong-center.jpg" alt="大東藝術中心" class="map-img">
+        <p>現代藝文空間與夜市生活交錯，呈現鳳山的當代文化面貌。</p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Footer -->
+  <div class="inner dark bg-dark text-white py-4">
+    <div class="container">
+      <div class="row text-center text-md-left">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p>© <script>document.write(new Date().getFullYear());</script> 第六組. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="#" class="mx-2 text-white">Terms</a>
+          <a href="#" class="mx-2 text-white">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
