@@ -1,57 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>第二天：眷村記憶 × 鳳山地景 | 第六組</title>
-
-  <!-- 字體與樣式 -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+  <title>第二天：眷村記憶 × 鳳山地景</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    .map-img {
-      width: 100%;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-bottom: 20px;
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #f8f9fa;
     }
-
-    .map-img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
     .day-section {
       padding: 60px 0;
     }
-
-    .day-section h2 {
-      font-weight: 900;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .location-name {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-top: 20px;
-    }
-
     .stop {
-      margin-bottom: 50px;
-    }
-
-    .stop img {
-      width: 100%;
+      background: white;
       border-radius: 10px;
-      margin-top: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .stop h3 {
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .stop p {
+      margin-bottom: 10px;
+    }
+    .map-img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+    .time {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .book-title {
+      font-weight: 700;
+      color: #007bff;
+    }
+    .container {
+      max-width: 900px;
     }
   </style>
 </head>
-
 <body>
 
   <!-- 導覽列 -->
@@ -77,85 +77,102 @@
   </nav>
 
   <!-- 頁首 -->
-  <div class="py-5 bg-primary text-center text-white">
+  <div class="py-5 bg-primary text-white text-center">
     <div class="container">
       <h2 class="mb-3">第二天：眷村記憶 × 鳳山地景</h2>
-      <p>探索左營與鳳山的歷史與文化，感受城市的多元風貌</p>
+      <p>走訪城市邊陲的記憶遺址，尋找被遺忘的眷村故事</p>
     </div>
   </div>
 
   <!-- 行程區塊 -->
-  <div class="day-section bg-light" data-aos="fade-up">
-    <div class="container">
+  <div class="container day-section">
 
-      <div class="stop">
-        <h3>09:00 高雄車站出發 → 左營站 → 紅35公車</h3>
-        <p>從高雄車站出發，轉乘至左營，進入眷村與蓮池潭的歷史記憶。</p>
-      </div>
-
-      <div class="stop">
-        <h3>09:30 蓮池潭</h3>
-        <img src="images/lian-chi-tan.jpg" alt="蓮池潭" class="map-img">
-        <p>高雄著名的宗教與歷史地景，可參訪龍虎塔、春秋閣等地。</p>
-      </div>
-
-      <div class="stop">
-        <h3>10:30 左營眷村區</h3>
-        <img src="images/zuoying-village.jpg" alt="左營眷村" class="map-img">
-        <p>走訪莒光路、鳳翔一路一帶，感受「他鄉成故鄉」的國族記憶空間。</p>
-        <p><strong>書目：</strong>《再見．可愛的左營》</p>
-        <p><strong>書目簡介：</strong>記錄左營眷村從軍事基地到民間社區的轉變，呈現居民對家園的情感與地方認同。</p>
-      </div>
-
-      <div class="stop">
-        <h3>12:00 午餐：左營眷村小吃</h3>
-        <p>推薦品項如將軍餅、海青王酥等，體驗眷村混合南北味的料理文化。</p>
-      </div>
-
-      <div class="stop">
-        <h3>13:30 曹公圳與鳳山溪</h3>
-        <img src="images/fengshan-river.jpg" alt="鳳山溪" class="map-img">
-        <p>水圳與鳳山老街交錯處，承載著教育與庶民生活的地景演變。</p>
-      </div>
-
-      <div class="stop">
-        <h3>15:30 鳳儀書院</h3>
-        <img src="images/fengyi-academy.jpg" alt="鳳儀書院" class="map-img">
-        <p>清代書院建築，結合官學與文風，適合進行歷史與文化探索。</p>
-        <p><strong>書目：</strong>《舊城邊的讀書聲》</p>
-        <p><strong>書目簡介：</strong>從書院制度與教育改革的歷史中，反思知識與地方治理的關係。</p>
-      </div>
-
-      <div class="stop">
-        <h3>17:00 大東藝術中心 → 大東夜市</h3>
-        <img src="images/dadong-center.jpg" alt="大東藝術中心" class="map-img">
-        <p>現代藝文空間與夜市生活交錯，呈現鳳山的當代文化面貌。</p>
-      </div>
-
+    <div class="stop">
+      <div class="time">09:00 集合 | 鳳山捷運站</div>
+      <h3>鳳山捷運站</h3>
+      <p>1. 鳳山的交通節點，集合方便</p>
+      <p>2. 接近眷村文化地帶</p>
+      <p>3. 鄰近鳳山老城區</p>
+      <p>4. 可搭配地方導覽起始</p>
+      <p>5. 設有街頭藝術與在地文化牆面</p>
+      <img src="images/fongshan-mrt.jpg" alt="鳳山捷運站" class="map-img">
     </div>
+
+    <div class="stop">
+      <div class="time">09:30 黃埔新村（步行導覽）</div>
+      <h3>黃埔新村</h3>
+      <p>1. 高雄重要的眷村保存區</p>
+      <p>2. 建築樣式具歷史代表性</p>
+      <p>3. 居住記憶與生活軌跡仍可辨識</p>
+      <p>4. 現為文創聚落與展覽空間</p>
+      <p>5. 探討軍人與家屬的遷徙與身份認同</p>
+      <img src="images/huangpu.jpg" alt="黃埔新村" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">10:30 文學導覽：《我們與惡的距離》片段閱讀</div>
+      <h3>主題導讀：眷村與集體記憶</h3>
+      <p><span class="book-title">書目簡介：</span>選自相關文學篇章或紀錄片內容，描述眷村居民的矛盾與情感遺留，探討認同、遷徙、歸屬等議題。</p>
+      <p><strong>說明：</strong>在眷村空間內聆聽相關文字朗讀，讓場景與故事彼此呼應。</p>
+    </div>
+
+    <div class="stop">
+      <div class="time">11:30 眷村文化館</div>
+      <h3>鳳山眷村文化館</h3>
+      <p>1. 收藏眷村老物件與口述歷史</p>
+      <p>2. 記錄退役軍人家庭故事</p>
+      <p>3. 展示當年生活實景模擬</p>
+      <p>4. 與在地社區連結緊密</p>
+      <p>5. 提供導覽解說與互動空間</p>
+      <img src="images/military-village-museum.jpg" alt="鳳山眷村文化館" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">12:30 午餐時間</div>
+      <h3>鳳山在地眷村小吃</h3>
+      <p>1. 眷村口味牛肉麵、餃子、蔥油餅</p>
+      <p>2. 在地老店推薦</p>
+      <p>3. 小吃文化延續記憶</p>
+      <p>4. 體驗飲食中的文化傳承</p>
+      <p>5. 學生自由選擇搭配休息</p>
+    </div>
+
+    <div class="stop">
+      <div class="time">14:00 鳳山城隍廟與老街區</div>
+      <h3>歷史街區與地景記憶</h3>
+      <p>1. 鳳山最古老的信仰中心之一</p>
+      <p>2. 城隍信仰與民間傳說交織</p>
+      <p>3. 街區空間保留清代格局</p>
+      <p>4. 可見傳統建築與現代混搭</p>
+      <p>5. 觀察城市發展脈絡的線索</p>
+      <img src="images/fongshan-temple.jpg" alt="鳳山城隍廟" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">15:30 鳳儀書院</div>
+      <h3>文學導覽：《城南舊事》對照閱讀</h3>
+      <p><span class="book-title">書目簡介：</span>雖非高雄本地作品，但其懷舊敘事與兒童視角可對照鳳山書院文化與教育意涵。</p>
+      <p><strong>說明：</strong>藉由空間閱讀與文字想像，體驗「教育地景」所承載的文化符號。</p>
+      <img src="images/fongyi.jpg" alt="鳳儀書院" class="map-img">
+    </div>
+
+    <div class="stop">
+      <div class="time">17:00 自由活動與結束</div>
+      <p><strong>建議：</strong>可於鳳山溪畔散步、參觀文創小店，亦可直接解散或於鳳山聚餐。</p>
+    </div>
+
   </div>
 
   <!-- Footer -->
   <div class="inner dark bg-dark text-white py-4">
-    <div class="container">
-      <div class="row text-center text-md-left">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <p>© 2025 第六組. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-md-right">
-          <a href="#" class="mx-2 text-white">Terms</a>
-          <a href="#" class="mx-2 text-white">Privacy</a>
-        </div>
-      </div>
+    <div class="container text-center">
+      <p>© <script>document.write(new Date().getFullYear());</script> 第六組. All rights reserved.</p>
     </div>
   </div>
 
-  <!-- JS -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
