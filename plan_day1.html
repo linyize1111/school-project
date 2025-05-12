@@ -51,7 +51,36 @@
     }
     .container {
       max-width: 900px;
+    } .cursor-effects {
+  position: fixed; /* 固定在視窗上 */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* 讓粒子容器不會阻擋鼠標事件 */
+  z-index: 10000; /* 確保在最上層 */
+}
+
+
+    .cursor-particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 0, 0.8);
+      animation: particle-animation 1s forwards;
     }
+
+    @keyframes particle-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
   </style>
 </head>
 <body>
