@@ -110,10 +110,10 @@
       <h1 data-aos="fade-up" data-aos-delay=""> 兩天一夜，帶你體驗深度高雄知性之旅，探索 <span class="typed-words"></span></h1>
       <a href="plan_day1.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="100">行程內容</a>
     </div>
-   <div id="image-container">
-    <img id="image1" src="images/bo2.jpg" alt="Image 1" style="display:block;">
-    <img id="image2" src="images/fengyi-academy.jpg" alt="Image 2" style="display:none;">
-</div>
+      <div class="slides overlay">
+      <img src="images/slider-1.jpg" class="active" alt="Image">
+      <img src="images/slider-2.jpg" alt="Image">
+    </div>
 
   </div>
 
@@ -441,18 +441,32 @@
   
 
 <script>
-    let currentImageIndex = 0;
-    const images = document.querySelectorAll('#image-container img');
+    $(function() {
+      var slides = $('.slides'),
+      images = slides.find('img');
 
-    function switchImage() {
-        images[currentImageIndex].style.display = 'none'; // 隱藏當前顯示的圖片
-        currentImageIndex = (currentImageIndex + 1) % images.length; // 切換到下一張圖片
-        images[currentImageIndex].style.display = 'block'; // 顯示新圖片
-    }
+      images.each(function(i) {
+        $(this).attr('data-id', i + 1);
+      })
 
-    // 假設你有某種文字變化的觸發機制，比如每隔3秒切換一次圖片
-    setInterval(switchImage, 3000);
-</script>
+      var typed = new Typed('.typed-words', {
+        strings: ["港都文學 X 鹽埕生活"," 眷村記憶 × 鳳山地景"],
+        typeSpeed: 80,
+        backSpeed: 80,
+        backDelay: 4000,
+        startDelay: 1000,
+        loop: true,
+        showCursor: true,
+        preStringTyped: (arrayPos, self) => {
+          arrayPos++;
+          console.log(arrayPos);
+          $('.slides img').removeClass('active');
+          $('.slides img[data-id="'+arrayPos+'"]').addClass('active');
+        }
+
+      });
+    })
+  </script>
 
 
   <script src="js/custom.js"></script>
